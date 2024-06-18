@@ -12,21 +12,20 @@ import { AppleIcon } from "@/assets/icons/appleIcon";
 import { CrystoAILogo } from "@/assets/icons/crystoAI";
 
 export const metadata: Metadata = {
-  title: "Sign In Page",
-  description: "CrystoAI theme",
+  title: "CrystoAI | Sign In Page",
 };
 
 export default function SignInPage() {
   return (
-    <main className="">
-      <div>
+    <main className="w-full h-full flex flex-col justify-center">
+      <div className="w-full">
         <TempThemeToggle />
       </div>
 
-      <div className="w-full max-w-lg mx-auto">
-        <div>
+      <div className="w-full max-w-lg mx-auto h-full flex flex-col justify-center">
+        <div className="-mt-12">
           <CrystoAILogo className="w-12 h-12 text-primary" />
-          <h1 className="text-4xl font-black mb-6 text-primary">CrystoAI</h1>
+          <h1 className="text-5xl font-black mb-6 text-primary">CrystoAI</h1>
         </div>
 
         <div className="bg-background p-2 rounded-2xl flex gap-4 mb-8">
