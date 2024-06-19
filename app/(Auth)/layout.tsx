@@ -1,19 +1,17 @@
+import AuthSidebar from "@/components/layout/auth/auth-sidebar";
+
 export default function AuthLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex p-4 h-screen w-screen">
-      <div className="max-w-lg w-1/2 p-4">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-          tenetur dignissimos repudiandae vero quibusdam vitae ut eum quas
-          veniam. Nostrum, blanditiis! Repudiandae quo, quasi a perferendis
-          aspernatur labore nesciunt natus!
-        </p>
-      </div>
-      <div className="grow p-4 bg-card rounded-2xl">{children}</div>
+    <div className="flex h-screen w-screen p-4">
+      <AuthSidebar
+        title="Supercharge your creativity and productivity"
+        description="Ready to dive into writing, planning, learning, and more with the help of AI?"
+      />
+      <div className="grow rounded-2xl bg-card p-4">{children}</div>
     </div>
   );
 }

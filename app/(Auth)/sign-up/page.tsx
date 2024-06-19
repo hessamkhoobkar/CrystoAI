@@ -1,17 +1,20 @@
-import { TempThemeToggle } from "@/components/tempthemetoggle";
 import type { Metadata } from "next";
 
+import { ThemeSwitch } from "@/components/theme-select";
+import AuthFormWrapper from "@/components/form/auth/auth-wrapper";
+
 export const metadata: Metadata = {
-  title: "Sign Up Page",
-  description: "CrystoAI theme",
+  title: "CrystoAI | Sign Up Page",
 };
 
-export default function SignUpPage() {
+export default function SignInPage() {
   return (
-    <main className="">
-      <h1>This is Sign Up</h1>
-      <p>Welcom back</p>
-      <TempThemeToggle />
+    <main className="flex h-full w-full flex-col justify-center">
+      <div className="w-full">
+        <ThemeSwitch />
+      </div>
+
+      <AuthFormWrapper />
     </main>
   );
 }

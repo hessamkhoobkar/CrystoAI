@@ -1,4 +1,4 @@
-import { TempThemeToggle } from "@/components/tempthemetoggle";
+import { ThemeSwitch } from "@/components/theme-select";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,7 +11,7 @@ export default function ResetPasswordPage() {
     <main className="">
       <h1>This is Reset Password</h1>
       <p>Welcom back</p>
-      <TempThemeToggle />
+      <ThemeSwitch />
     </main>
   );
 }
